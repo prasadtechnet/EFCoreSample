@@ -56,7 +56,18 @@ namespace CAEFCoreApp1.DataAccess
                .WithMany(u => u.UserRole)
                .HasForeignKey(r => r.RoleID);
 
-                          
+            //User Claim
+            modelBuilder.Entity<UserClaim>()
+               .HasKey(u => u.UserClaimID);
+
+            modelBuilder.Entity<UserClaim>()
+                .HasOne(u => u.User)
+                .WithMany(u => u.UserClaim)
+                .HasForeignKey(u => u.UserID);
+
+            modelBuilder.Entity<UserClaim>()
+                .Property(u => u.UserClaimID)
+                .UseSqlServerIdentityColumn();
 
 
             base.OnModelCreating(modelBuilder);

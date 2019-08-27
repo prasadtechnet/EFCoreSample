@@ -12,5 +12,6 @@ namespace CAEFCoreApp1.DataAccess.Entities
         public DateTime CreatedOn { get; set; }
 
         public virtual ICollection<UserRole> UserRole { get; set; }
+        public virtual ICollection<UserClaim> UserClaim { get; set; }
     }
 }

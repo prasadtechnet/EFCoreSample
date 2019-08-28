@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OrderManagement.Common\OrderManagement.Common.csproj" />
+    <ProjectReference Include="..\OrderManagement.DataInfrastructure\OrderManagement.DataInfrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Entities\Business\" />
+    <Folder Include="Entities\Auth\" />
+    <Folder Include="Managers\AuthManager\" />
+    <Folder Include="Managers\OrderManager\" />
+    <Folder Include="Specification\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.2" />
+  </ItemGroup>
+
+</Project>

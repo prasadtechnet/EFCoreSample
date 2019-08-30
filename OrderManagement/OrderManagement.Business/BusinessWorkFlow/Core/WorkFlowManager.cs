@@ -4,9 +4,10 @@ using System.Text;
 
 namespace OrderManagement.Business.BusinessWorkFlow.Core
 {
-    public interface IWorkflowHandler
+
+    public interface IWorkFlowManager
     {
-       void Handle();
-        
+        void Execute();
+       
     }
 }

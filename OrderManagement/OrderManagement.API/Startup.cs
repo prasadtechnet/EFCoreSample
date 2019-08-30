@@ -31,7 +31,7 @@ namespace OrderManagement.API
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-            services.UseSqlServer(Configuration.GetConnectionString(""));
+          //  services.UseSqlServer(Configuration.GetConnectionString(""));
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);

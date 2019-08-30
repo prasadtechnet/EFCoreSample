@@ -13,7 +13,6 @@
     <Folder Include="Entities\Business\" />
     <Folder Include="Entities\Auth\" />
     <Folder Include="Managers\AuthManager\" />
-    <Folder Include="Managers\OrderManager\" />
     <Folder Include="Specification\" />
   </ItemGroup>
 

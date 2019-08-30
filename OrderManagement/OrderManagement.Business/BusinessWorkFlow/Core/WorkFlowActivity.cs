@@ -6,11 +6,12 @@ namespace OrderManagement.Business.BusinessWorkFlow.Core
 {
     public class WorkFlowActivity
     {
-        public WorkFlowActivity()
-        {
+        public int OrderNo { get; set; }
 
-        }
+        public string Name { get; set; }
+        public string Status { get; set; }
 
-        public int MyProperty { get; set; }
+
+
     }
 }
